@@ -1,3 +1,6 @@
+body{
+    overflow: hidden;
+}
 .logo{
     height: 100vh;
     background-image: url(img/imagemFundoLogin.jpg);
