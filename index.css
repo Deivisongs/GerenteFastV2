@@ -4,7 +4,7 @@ body{
 .logo{
     height: 100vh;
     background-image: url(img/imagemFundoLogin.jpg);
-    background-size: cover;
+    background-size: auto;
     filter: brightness(0.1);
 }
 .form{
