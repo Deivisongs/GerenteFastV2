@@ -1,10 +1,16 @@
 body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: calc(var(--vh, 1vh)* 100);
     background-image: url(img/imagemFundoLogin.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+.logo{
+    margin-bottom: calc(var(--vh, 1vh) * 50);
 }
 .form{
     width: 100%;
