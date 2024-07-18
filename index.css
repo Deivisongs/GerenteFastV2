@@ -1,13 +1,10 @@
 body{
-    
-}
-.logo{
-
+    width: 100%;
     height: 100vh;
     background-image: url(img/imagemFundoLogin.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
-    filter: brightness(0.1);
 }
 .form{
     width: 100%;
