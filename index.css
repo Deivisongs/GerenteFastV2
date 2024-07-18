@@ -10,6 +10,7 @@ body{
     background-position: center;
 }
 .logo{
+    width: 150px;
     margin-bottom: calc(var(--vh, 1vh) * 50);
 }
 .form{
