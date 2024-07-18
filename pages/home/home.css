@@ -1,0 +1,113 @@
+/* --------- Header ------------- */
+.header{
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 0 0 50px 50px;
+}
+.header .divText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header div .nome{
+    font-size: 20px;
+}
+.header div .itenstop{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+}
+.header div .itenstop span{
+    font-size: 15px;
+    font-weight: 200;
+}
+.btnNotificacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    position: relative;
+    background: transparent;
+    color: white;
+}
+.btnNotificacao > span{
+    font-size: 35px;
+    font-weight: 200;
+}
+.btnNotificacao .qtdNotificacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    background: #ff0404;
+    border-radius: 50%;
+    bottom: 0px;
+    right: 0px;
+}
+.btnNotificacao .qtdNotificacao p{
+    display: inline-block;
+    font-weight: 600;
+}
+
+/* ------------ Main ------------- */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 20px 15px;
+}
+
+    /* ----- Section Notificações ----- */
+    .sectionNotificacoes{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: flex-end;
+    }
+    .sectionNotificacoes a{
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .sectionNotificacoes .cardNotificacao{
+        display: flex;
+        padding: 15px 20px;
+        border-radius: 25px;
+        background: white;
+        box-shadow: 2px 2px 2px #0000000c;
+    }
+    .sectionNotificacoes .cardNotificacao .icone{
+        font-size: 35px;
+        font-weight: 200;
+        display: flex;
+        align-items: center;
+        padding: 0 15px 0 0;
+    }
+    .sectionNotificacoes .cardNotificacao .text{
+        padding-left: 15px;
+        border-left: 1px solid black;
+    }
+    .sectionNotificacoes .cardNotificacao .text h4{
+        font-size: 14px;
+        font-weight: 600;
+        color: #4d4d4d;
+    }
+    .sectionNotificacoes .cardNotificacao .text p{
+        font-size: 12px;
+        color: #5c5c5c;
+    }
+    .sectionNotificacoes .cardNotificacao .btnFechar{
+        width: 15%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ----- Section Botoes ----- */
+    .sectionButtons{
+        border: 1px solid red;
+    }
