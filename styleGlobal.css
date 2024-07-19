@@ -16,6 +16,7 @@ input:focus, select:focus, textarea:focus{
 }
 button{
     border: none;
+    background: transparent;
 }
 button:hover{
     cursor: pointer;

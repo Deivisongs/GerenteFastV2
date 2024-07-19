@@ -7,7 +7,7 @@
         <!-- Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
         <!-- Google icons-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -54,16 +54,129 @@
                     <p>Esta chegando o término de contrato da <strong>Denise de Miranda</strong></p>
                 </span>
                 <span class="material-symbols-outlined btnFechar">close_small</span>
-
             </div>
             <a href="#">Ver Mais ></a>
         </section>
 
+        <!-- Section buttons -->
         <section class="sectionButtons">
+            <span>
+                <button id="btnAdicionar">
+                    <span class="material-symbols-outlined">add</span>
+                    <p>Adicionar Novo</p>
+                </button>
+                <button>
+                    <span class="material-symbols-outlined">person_remove</span>
+                    <p>Faltas</p>
+                </button>
+                <button>
+                    <span class="material-symbols-outlined">ecg</span>
+                    <p>Atestado Médico</p>
+                </button>
+            </span>
+            <span>
+                <button>
+                    <span class="material-symbols-outlined">file_save</span>
+                    <p>Relatório</p>
+                </button>
+                <button>
+                    <span class="material-symbols-outlined">book_4</span>
+                    <p>Ver Lançados</p>
+                </button>
+                <button>
+                    <span class="material-symbols-outlined">menu</span>
+                    <p>Mais Serviços</p>
+                </button>
+            </span>
+        </section>
+
+        <!-- Section Banner -->
+        <section class="sectionBanner">
+            <div class="divBanner">
+                <h3>Banner Principal</h3>
+            </div>
+        </section>
+
+        <!-- Section Lançamentos -->
+        <section class="ultimosLancamento">
+            <header class="headerLancamentos">
+                <h3>Últimos Lançamentos</h3>
+                <a href="#">Ver Todos ></a>
+            </header>
+
+
+            <!-- Lançamentos -->
+            <div class="lancamento">
+                <div class="cardLancamento" onclick="abrirInfoLancamentos(1)">
+                    <span class="material-symbols-outlined icone">person_remove</span>
+                    <span class="text">
+                        <h4>Falta</h4>
+                        <p>Funcionária <strong>Denise de Miranda</strong></p>
+                        <p class="infoDate">03 de Agosto de 2024</p>
+                    </span>
+                    <span class="material-symbols-outlined btnFechar" >keyboard_arrow_down</span>
+                </div>
+                <div class="maisInfo" id="maisInfo1">
+                    <span id="lancamento1">
+                        <h3>Observação:</h3>
+                        <p>Funcionária faltou e não entregou nenhuma justificativa.</p>
+                    </span>
+                    <button id="btnExcluir1">
+                        <span class="material-symbols-outlined btnFechar">delete_sweep</span>
+                        Excluir Lançamento
+                    </button>
+                </div>
+            </div>
+
+            <div class="lancamento">
+                <div class="cardLancamento" onclick="abrirInfoLancamentos(2)">
+                    <span class="material-symbols-outlined icone">ecg</span>
+                    <span class="text">
+                        <h4>Atestado Médico/Horas</h4>
+                        <p>Funcionária <strong>Denise de Miranda</strong></p>
+                        <p class="infoDate">15hrs a 16h45m</p>
+                    </span>
+                    <span class="material-symbols-outlined btnFechar" >keyboard_arrow_down</span>
+                </div>
+                <div class="maisInfo" id="maisInfo2">
+                    <span id="lancamento2">
+                        <h3>Observação:</h3>
+                        <p>Funcionária faltou e não entregou nenhuma justificativa.</p>
+                    </span>
+                    <button id="btnExcluir2">
+                        <span class="material-symbols-outlined btnFechar">delete_sweep</span>
+                        Excluir Lançamento
+                    </button>
+                </div>
+            </div>
+
+            <div class="lancamento">
+                <div class="cardLancamento" onclick="abrirInfoLancamentos(3)">
+                    <span class="material-symbols-outlined icone">airline_seat_flat</span>
+                    <span class="text">
+                        <h4>Folga de Domingo</h4>
+                        <p>Funcionária <strong>Juselma Soares</strong></p>
+                        <p class="infoDate">14 de Agosto de 2024</p>
+                    </span>
+                    <span class="material-symbols-outlined btnFechar" >keyboard_arrow_down</span>
+                </div>
+                <div class="maisInfo" id="maisInfo3">
+                    <span id="lancamento3">
+                        <h3>Observação:</h3>
+                        <p>Funcionária faltou e não entregou nenhuma justificativa.</p>
+                    </span>
+                    <button id="btnExcluir3">
+                        <span class="material-symbols-outlined btnFechar">delete_sweep</span>
+                        Excluir Lançamento
+                    </button>
+                </div>
+            </div>
             
+
         </section>
 
     </main>
 
+    <script src="home.js"></script>
 </body>
 </html>

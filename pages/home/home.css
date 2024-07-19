@@ -59,7 +59,7 @@
 main{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 20px;
     padding: 20px 15px;
 }
 
@@ -75,7 +75,9 @@ main{
         margin-right: 10px;
     }
     .sectionNotificacoes .cardNotificacao{
+        width: 100%;
         display: flex;
+        justify-content: space-between;
         padding: 15px 20px;
         border-radius: 25px;
         background: white;
@@ -104,10 +106,164 @@ main{
     .sectionNotificacoes .cardNotificacao .btnFechar{
         width: 15%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     /* ----- Section Botoes ----- */
     .sectionButtons{
-        border: 1px solid red;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
     }
+    .sectionButtons span {
+        display: flex;
+        justify-content: space-between;
+    }
+    .sectionButtons span button{
+        width: 31%;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: white;
+        border-radius: 24px;
+        padding: 16px;
+        text-align: start;
+        font-size: 15px;
+        font-weight: 600;
+        color: #1e1e1e;
+        line-height: 1.1;
+        box-shadow: 2px 2px 2px #0000000c;
+    }
+    .sectionButtons span button span{
+        font-size: 33px;
+        font-weight: 200;
+    }
+    .sectionButtons span button p{
+        font-family: 'Alef', sans-serif;
+    }
+    #btnAdicionar{
+        background-image: linear-gradient(25deg, black, rgb(15, 15, 15),rgb(150, 150, 150));
+        color: white;
+    }
+    #btnAdicionar span{
+        font-weight: 400;
+    }
+
+
+    /* -------- Section Banner -------- */
+    .sectionBanner .divBanner{
+        width: 100%;
+        height: 109px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px #0000000c;
+        background: white;
+        border: 1px solid rgb(212, 212, 212);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    /* --------- section Lançamentos ----------*/
+    .ultimosLancamento{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .ultimosLancamento header{
+        margin-top: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .ultimosLancamento header h3{
+        font-weight: 600;
+    }
+    .ultimosLancamento header a{
+        font-size: 14px;
+    }
+
+        /* ------- cardLançamento ------- */
+        .lancamento{
+            background: white;
+            border-radius: 25px;
+            box-shadow: 2px 2px 2px #0000000c;
+        }
+        .ultimosLancamento .cardLancamento{
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 20px;
+            border-radius: 25px;
+            background: white;
+            border: 1px solid #c2c2c2;
+            box-shadow: 2px 2px 2px #0000000c;
+        }
+        .ultimosLancamento .cardLancamento .icone{
+            font-size: 35px;
+            font-weight: 200;
+            display: flex;
+            align-items: center;
+            padding: 0 15px 0 0;
+        }
+        .ultimosLancamento .cardLancamento .text{
+            width: 100%;
+            padding-left: 15px;
+            border-left: 1px solid black;
+        }
+        .ultimosLancamento .cardLancamento .text h4{
+            font-size: 14px;
+            font-weight: 600;
+            color: #111111;
+        }
+        .ultimosLancamento .cardLancamento .text p{
+            font-size: 12px;
+            color: #5c5c5c;
+        }
+        .ultimosLancamento .cardLancamento .text .infoDate{
+            font-style: italic;
+        }
+        .ultimosLancamento .cardLancamento .btnFechar{
+            width: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .ultimosLancamento .lancamento .maisInfo{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            color: #5c5c5c;
+            transition: 1s;
+            opacity: 0;
+        }
+        .ultimosLancamento .lancamento .maisInfo > span{
+            display: none;
+            padding-left: 15px;
+            border-left: 1px solid #4d4d4d;
+        }
+        .ultimosLancamento .lancamento .maisInfo h3{
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .ultimosLancamento .lancamento .maisInfo p{
+            display: inline-block;
+            max-height: 42px;
+            font-size: 12px;
+            font-weight: 300;
+            font-style: italic;
+        }
+        .ultimosLancamento .lancamento .maisInfo button{
+            display: none;
+            gap: 10px;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 600;
+            color: #b70000;
+        }
+
+
+
+
+
+
