@@ -20,7 +20,169 @@
 
     <title>Home</title>
 </head>
-<body>
+<body id="body">
+    <!-- Modal Relatorio -->
+    <div class="modalRelatorio" id="modalRelatorio">
+        <section class="relatorio">
+            <header>
+                <h3>Relatório</h3>
+                <p>Selecione as métricas do relatório.</p>
+            </header>
+            <form>
+                <label for="funcionario" class="input">
+                    <span class="material-symbols-outlined">person</span>
+                
+                    <select name="funcionario" id="funcionario">
+                        <option value="0" disabled selected>Selecione o Funcionário...</option>
+                        <option value="1">Jose Carlos</option>
+                        <option value="2">Ailton Neves</option>
+                        <option value="1">Karla Santos</option>
+                        <option value="1">Joseane Freitas</option>
+                    </select>
+                    <span class="material-symbols-outlined seta">arrow_drop_down</span>
+                </label>
+
+                <label for="dataInicial" class="date">
+                    <p>Data Inicial:</p>
+                    <span>
+                        <span class="material-symbols-outlined">calendar_month</span>
+                
+                        <input type="date" name="dataInicial" id="dataInicial">
+                    </span>   
+                </label>
+
+                <label for="dataFinal" class="date">
+                    <p>Data Final:</p>
+                    <span>
+                        <span class="material-symbols-outlined">calendar_month</span>
+                
+                        <input type="date" name="dataFinal" id="dataFinal">
+                    </span>   
+                </label>
+
+                <button class="btnGerar" type="button">
+                    <span class="material-symbols-outlined">file_save</span>
+                    <p>Gerar Relatório</p>
+                </button>
+                <button class="btnCancelar" type="button" onclick="abrirRelatorio()">
+                    <p>Cancelar</p>
+                </button>
+                
+            </form>
+        </section>
+    </div>
+
+    <!-- Modal Notificações -->
+    <div class="modalNotificacoes" id="modalNotificacoes">
+        <section class="notificacoes" id="notificacoes">
+            <header>
+                <h3>Notificações</h3>
+                <span class="material-symbols-outlined" onclick="abrirNotificacoes()">close</span>
+            </header>
+            <div>
+                <span id="notificacao1">
+                    <span class="material-symbols-outlined">warning</span>
+                    <div>
+                        <h5>Término de Contrato</h5>
+                        <p>Esta chegando o término de contrato da <strong>Denise de Miranda</strong>.</p>
+                    </div>
+                    <button>
+                        <span class="material-symbols-outlined">close_small</span>
+                    </button>
+                </span>
+                <hr>
+                <span id="notificacao2">
+                    <span class="material-symbols-outlined">feedback</span>
+                    <div>
+                        <h5>Fim de L. Maternidade</h5>
+                        <p>Esta chegando o término da Licença maternidade da <strong>Pamela Alves</strong>.</p>
+                    </div>
+                    <button>
+                        <span class="material-symbols-outlined">close_small</span>
+                    </button>
+                </span>
+                <hr>
+                <span id="notificacao3">
+                    <span class="material-symbols-outlined">warning</span>
+                    <div>
+                        <h5>Término de Contrato</h5>
+                        <p>Esta chegando o término de contrato da <strong>Denise de Miranda</strong>.</p>
+                    </div>
+                    <button>
+                        <span class="material-symbols-outlined">close_small</span>
+                    </button>
+                </span>
+                <hr>
+                <span id="notificacao2">
+                    <span class="material-symbols-outlined">feedback</span>
+                    <div>
+                        <h5>Fim de L. Maternidade</h5>
+                        <p>Esta chegando o término da Licença maternidade da <strong>Pamela Alves</strong>.</p>
+                    </div>
+                    <button>
+                        <span class="material-symbols-outlined">close_small</span>
+                    </button>
+                </span>
+                <hr>
+                <span id="notificacao3">
+                    <span class="material-symbols-outlined">warning</span>
+                    <div>
+                        <h5>Término de Contrato</h5>
+                        <p>Esta chegando o término de contrato da <strong>Denise de Miranda</strong>.</p>
+                    </div>
+                    <button>
+                        <span class="material-symbols-outlined">close_small</span>
+                    </button>
+                </span>
+                <hr>
+                <span id="notificacao2">
+                    <span class="material-symbols-outlined">feedback</span>
+                    <div>
+                        <h5>Fim de L. Maternidade</h5>
+                        <p>Esta chegando o término da Licença maternidade da <strong>Pamela Alves</strong>.</p>
+                    </div>
+                    <button>
+                        <span class="material-symbols-outlined">close_small</span>
+                    </button>
+                </span>
+                <hr>
+                <span id="notificacao3">
+                    <span class="material-symbols-outlined">warning</span>
+                    <div>
+                        <h5>Término de Contrato</h5>
+                        <p>Esta chegando o término de contrato da <strong>Denise de Miranda</strong>.</p>
+                    </div>
+                    <button>
+                        <span class="material-symbols-outlined">close_small</span>
+                    </button>
+                </span>
+                <hr>
+                <span id="notificacao2">
+                    <span class="material-symbols-outlined">feedback</span>
+                    <div>
+                        <h5>Fim de L. Maternidade</h5>
+                        <p>Esta chegando o término da Licença maternidade da <strong>Pamela Alves</strong>.</p>
+                    </div>
+                    <button>
+                        <span class="material-symbols-outlined">close_small</span>
+                    </button>
+                </span>
+                <hr>
+                <span id="notificacao3">
+                    <span class="material-symbols-outlined">warning</span>
+                    <div>
+                        <h5>Término de Contrato</h5>
+                        <p>Esta chegando o término de contrato da <strong>Denise de Miranda</strong>.</p>
+                    </div>
+                    <button>
+                        <span class="material-symbols-outlined">close_small</span>
+                    </button>
+                </span>
+                <hr>
+            </div>
+        </section>
+    </div>
+
 
     <!-- Header Principal -->
     <header class="header">
@@ -32,14 +194,12 @@
             </span>
             <p class="nome">Andrea da Silva!!</p>
         </div>
-        <div>
-            <button class="btnNotificacao">
-                <span class="material-symbols-outlined">chat</span>
-                <div class="qtdNotificacao">
-                    <p>5</p>
-                </div>
-            </button>
-        </div>
+        <button type="button" class="btnNotificacao" onclick="abrirNotificacoes()">
+            <span class="material-symbols-outlined">chat</span>
+            <div class="qtdNotificacao">
+                <p>5</p>
+            </div>
+        </button>
     </header>
 
     <!-- main -->
@@ -61,32 +221,32 @@
         <!-- Section buttons -->
         <section class="sectionButtons">
             <span>
-                <button id="btnAdicionar">
+                <a href="#" id="btnAdicionar">
                     <span class="material-symbols-outlined">add</span>
                     <p>Adicionar Novo</p>
-                </button>
-                <button>
+                </a>
+                <a href="#">
                     <span class="material-symbols-outlined">person_remove</span>
                     <p>Faltas</p>
-                </button>
-                <button>
+                </a>
+                <a href="#">
                     <span class="material-symbols-outlined">ecg</span>
                     <p>Atestado Médico</p>
-                </button>
+                </a>
             </span>
             <span>
-                <button>
+                <a href="#" onclick="abrirRelatorio()">
                     <span class="material-symbols-outlined">file_save</span>
                     <p>Relatório</p>
-                </button>
-                <button>
+                </a>
+                <a href="#">
                     <span class="material-symbols-outlined">book_4</span>
                     <p>Ver Lançados</p>
-                </button>
-                <button>
+                </a>
+                <a href="#">
                     <span class="material-symbols-outlined">menu</span>
                     <p>Mais Serviços</p>
-                </button>
+                </a>
             </span>
         </section>
 

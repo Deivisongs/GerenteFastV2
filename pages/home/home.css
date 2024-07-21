@@ -1,5 +1,8 @@
+
 /* --------- Header ------------- */
 .header{
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     background: black;
@@ -57,6 +60,8 @@
 
 /* ------------ Main ------------- */
 main{
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -91,6 +96,7 @@ main{
         padding: 0 15px 0 0;
     }
     .sectionNotificacoes .cardNotificacao .text{
+        width: 100%;
         padding-left: 15px;
         border-left: 1px solid black;
     }
@@ -119,7 +125,7 @@ main{
         display: flex;
         justify-content: space-between;
     }
-    .sectionButtons span button{
+    .sectionButtons span a{
         width: 31%;
         height: 120px;
         display: flex;
@@ -135,11 +141,11 @@ main{
         line-height: 1.1;
         box-shadow: 2px 2px 2px #0000000c;
     }
-    .sectionButtons span button span{
+    .sectionButtons span a span{
         font-size: 33px;
         font-weight: 200;
     }
-    .sectionButtons span button p{
+    .sectionButtons span a p{
         font-family: 'Alef', sans-serif;
     }
     #btnAdicionar{
@@ -234,7 +240,7 @@ main{
             flex-direction: column;
             gap: 10px;
             color: #5c5c5c;
-            transition: 1s;
+            transition: 500ms;
             opacity: 0;
         }
         .ultimosLancamento .lancamento .maisInfo > span{
@@ -266,4 +272,221 @@ main{
 
 
 
+
+
+
+/* ------------- Modal Relatorio ------------------ */
+.modalRelatorio{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.603);
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}        
+.modalRelatorio .relatorio{
+    width: 90%;
+    max-width: 400px;
+    background: #f2f2f2;
+    padding: 30px 30px;
+    border-radius: 20px;
+}        
+.modalRelatorio header{
+    margin-bottom: 20px;
+}        
+.modalRelatorio header h3{
+    font-size: 35px;
+}        
+.modalRelatorio header p{
+    position: relative;
+    font-size: 12px;
+    top: -10px;
+}        
+.modalRelatorio form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}        
+.modalRelatorio form .input{
+    width: 100%;
+    height: 58px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: white;
+    padding: 0 15px;
+    border-radius: 20px;
+}        
+.modalRelatorio form .input span{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #b3b3b3;
+    font-weight: 200;
+}        
+.modalRelatorio form .input .seta{
+    color: black;
+    font-weight: 500;
+}        
+.modalRelatorio form .input select{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    background: transparent; 
+}        
+.modalRelatorio form .date{
+    width: 100%;
+}        
+.modalRelatorio form .date p{
+    font-style: italic;
+    font-size: 12px;
+    color: #5c5c5c;
+    margin: 0 20px; 
+}        
+.modalRelatorio form .date > span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 58px;
+    gap: 10px;
+    padding: 0 20px;
+    background: white; 
+    border-radius: 20px;
+    
+}        
+.modalRelatorio form .date > span span{
+    color: #b3b3b3;
+    font-weight: 200;
+}              
+.modalRelatorio form .date > span input{
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    font-size: 15px;
+    color: #b3b3b3;
+    background: transparent;
+}        
+.modalRelatorio form .btnGerar{
+    width: 100%;
+    height: 58px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: black;
+    border-radius: 20px;
+    margin-top: 15px;
+}   
+.modalRelatorio form .btnGerar p{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Alef', sans-serif;
+}   
+.modalRelatorio form .btnCancelar{
+    width: 100%;
+    height: 58px;
+    font-weight: 600;
+    color: black;
+    font-family: 'Alef', sans-serif;
+    border: 2px solid black;
+    border-radius: 20px;
+}   
+.modalRelatorio form .btnCancelar p{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Alef', sans-serif;
+}   
+
+
+
+/* ---------- Notificações ---------- */
+
+.modalNotificacoes{
+    position: absolute;
+    right: 0;
+    height: calc(var(--vh, 1vh)* 100);
+    background: rgba(0, 0, 0, 0.13);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 999;
+    overflow: hidden;
+    transition: 500ms;
+}
+.modalNotificacoes .notificacoes{
+    display: none;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    padding: 25px 0px;
+    background: white;
+    box-shadow: -5px -5px 10px rgb(66, 66, 66);
+}
+.modalNotificacoes .notificacoes header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 25px 40px 25px;
+}
+.modalNotificacoes .notificacoes header h3{
+    font-size: 30px;
+    font-weight: 600;
+}
+.modalNotificacoes .notificacoes header span{
+    font-size: 30px;
+    font-weight: 700;
+}
+.modalNotificacoes .notificacoes header span:hover{
+    cursor: pointer;
+}
+.modalNotificacoes .notificacoes > div{
+    max-height: 87%;
+    padding: 15px 20px 0 25px;
+    overflow: auto;
+    box-shadow: inset 0px 10px 10px -10px rgba(0, 0, 0, 0.192),
+                inset 0 -10px 10px -10px rgba(0, 0, 0, 0.192) ;
+}
+.modalNotificacoes .notificacoes > div > hr{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+    margin: 15px 0;
+}
+.modalNotificacoes .notificacoes > div > span{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.modalNotificacoes .notificacoes > div > span span{
+    font-weight: 200;
+    font-size: 35px;
+}
+.modalNotificacoes .notificacoes > div > span div{
+    width: 100%;
+    display: inline-block;
+}
+.modalNotificacoes .notificacoes > div > span div h5{
+    font-weight: 600;
+    font-size: 15px;
+}
+.modalNotificacoes .notificacoes > div > span div p{
+    font-size: 12px;
+    color: #5c5c5c;
+}
+.modalNotificacoes .notificacoes > div > span button{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background: #e9e9e9;
+}
+.modalNotificacoes .notificacoes > div > span button span{
+    font-size: 20px;
+}
 
