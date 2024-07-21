@@ -1,0 +1,117 @@
+.header{
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 25px;
+}
+.header h4{
+    font-size: 30px;
+    font-weight: 600;
+}
+.header a{
+    display: flex;
+}
+.header a > span{
+    font-size: 30px;
+    font-weight: 800;
+}
+.sectionBtn{
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    padding: 0 15px;
+}
+.btnAdd{
+    width: 100%;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 25px;
+    color: white;
+    border-radius: 20px;
+    background-image: linear-gradient(25deg, black, rgb(15, 15, 15),rgb(150, 150, 150));
+    box-shadow: 2px 2px 2px #0000000c;
+}
+.btnAdd p{
+    font-size: 17px;
+    font-family: 'Alef', sans-serif;
+    font-weight: 700;
+}
+.btnAdd span{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.sectionFuncionarios{
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 50px 15px 0 15px;
+}
+.sectionFuncionarios header h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.cardFuncionario{
+    display: flex;
+    padding: 15px 20px;
+    gap: 15px;
+    align-items: center;
+    border-radius: 30px;
+    background: #eeeeee;
+    border: 1px solid #d3d3d3;
+    box-shadow: 2px 2px 2px #0000000c;
+}
+.cardFuncionario > span{
+    font-weight: 200;
+    font-size: 40px;
+}
+.cardFuncionario .text{
+    width: 100%;
+    padding-left: 20px;
+    border-left: 1px solid black;
+}
+.cardFuncionario .text h5{
+    font-size: 17px;
+    font-weight: 600;
+}
+.cardFuncionario .text p{
+    font-size: 12px;
+    color: #5c5c5c;
+}
+.cardFuncionario .icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
