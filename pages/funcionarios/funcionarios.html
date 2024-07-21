@@ -20,7 +20,46 @@
 
     <title>Funcionarios</title>
 </head>
-<body>
+<body id="body">
+
+    <!-- Modal InfoFuncionarios -->
+    <section class="modalInfo" id="modalInfo">
+        <div class="infoFuncionarios">
+            <div class="itensTop">
+                <span class="material-symbols-outlined">account_circle</span>
+                <h5>José Carlos Batista Costa</h5>
+                <p>Data de Nascimento 24 de Agosto de 2002</p>
+            </div>
+            <div class="itensMed">
+                <p><strong>Função: </strong>Repositor</p>
+                <p><strong>Data de Admissão: </strong>24 de Agosto de 2024</p>
+
+                
+                <hr>
+                <p><strong>Contrato de Experiencia: </strong>30 Dias</p>
+                <p><strong>Fim do Contrato: </strong>14/09/2024</p>
+
+                <hr>
+                <p><strong>Funcionário esta de Férias: </strong>--</p>
+                <p><strong>Fim das Férias: </strong>--</p>
+
+                <hr>
+                <p><strong>Licença Maternidade: </strong>--</p>
+                <p><strong>Fim da Licença: </strong>--</p>
+
+            </div>
+            <div class="divButton">
+                <button href="#" class="btnFechar" onclick="abrirModalInfo()">Fechar</button>
+                <a href="#">Editar Informações</a>
+            </div>
+        </div>
+    </section> 
+    
+
+
+
+
+
     <header class="header">
         <h4>Funcionários</h4>
         <a href="../maisServicos/maisServicos.html">
@@ -40,7 +79,7 @@
         <header>
             <h4>Funcionários Cadastrados</h4>
         </header>
-        <a href="#" class="cardFuncionario">
+        <a href="#" class="cardFuncionario" onclick="abrirModalInfo()">
             <span class="material-symbols-outlined">person</span>
             <div class="text">
                 <h5>Pamela Alves</h5>
@@ -107,6 +146,8 @@
             </div>
         </a>
     </section>
+
+    <script src="funcionarios.js"></script>
 </body>
 </html>
 

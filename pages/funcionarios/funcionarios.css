@@ -90,6 +90,77 @@
     gap: 5px;
 }
 
+/* --------- Modal Info ----------- */
+.modalInfo{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(var(--vh, 1vh)* 100);
+    background: rgba(0, 0, 0, 0.548);
+}
+.modalInfo .infoFuncionarios{
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding: 20px 20px 10px 20px;
+    border-radius: 20px;
+    background: #e4e4e4;
+    box-shadow: 2px 2px 2px #0000000c;
+}
+.modalInfo .infoFuncionarios .itensTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modalInfo .infoFuncionarios .itensTop span{
+    font-size: 70px;
+    font-weight: 200;
+}
+.modalInfo .infoFuncionarios .itensTop h5{
+    font-size: 20px;
+}
+.modalInfo .infoFuncionarios .itensTop p{
+    font-size: 11px;
+    color: #5c5c5c;
+}
+.modalInfo .infoFuncionarios .itensMed{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #5c5c5c;
+}
+.modalInfo .infoFuncionarios .itensMed hr{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.438);
+}
+.modalInfo .infoFuncionarios .itensMed p{
+    font-size: 13px;
+}
+.modalInfo .infoFuncionarios .divButton{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.modalInfo .infoFuncionarios .divButton a, .modalInfo .infoFuncionarios .divButton button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 59px;
+    color: black;
+    font-family: 'Alef', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.modalInfo .infoFuncionarios .divButton .btnFechar{
+    color: white;
+    background-image: linear-gradient(25deg, black, rgb(15, 15, 15),rgb(150, 150, 150));
+}
+
 
 
 
