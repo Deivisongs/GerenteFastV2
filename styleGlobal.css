@@ -11,6 +11,10 @@ input{
     border: none;
     font-size: 16px;
 }
+select{
+    border: none;
+    font-size: 16px;
+}
 input:focus, select:focus, textarea:focus{
     outline: 0;
 }
