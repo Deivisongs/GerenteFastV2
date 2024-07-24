@@ -1,0 +1,236 @@
+form{
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 15px;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+}
+form input{
+    padding: 0 10px;
+    width: 100%;
+    height: 41px;
+    border-radius: 10px;
+    background: white;
+}
+form .icon{
+    width: 70px;
+    height: 70px;
+}
+form > span{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+form > span p{
+    font-size: 15px;
+    display: flex;
+    font-style: italic;
+    color: #5c5c5c;
+}
+form > span input{
+    width: 170px;
+}
+form select{
+    width: 100%;
+    height: 41px;
+    padding: 0 10px;
+    background: white;
+    border-radius: 10px;
+}
+form #experiencia{
+    width: 170px;
+}
+.divButtons{
+    width: 100%;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    margin: 30px 0;
+}
+.divButtons button, .divButtons a{
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Alef', sans-serif;
+    font-weight: 600;
+}
+.divButtons .btnSalvar{
+    width: 100%;
+    height: 59px;
+    border-radius: 20px;
+    color: white;
+    font-size: 17px;
+    font-family: 'Alef', sans-serif;
+    font-weight: 600;
+    background-image: linear-gradient(25deg, black, rgb(15, 15, 15),rgb(150, 150, 150));
+    box-shadow: 2px 2px 2px #0000000c;
+}
+.divButtons .btnExcluir{
+    color: #b70000;
+}
+
+/* -------- Modal Salvar --------- */
+
+.modalSalvarInfo{
+    position: absolute;
+    width: 100%;
+    height: calc(var(--vh, 1vh)* 100);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.514);
+}
+.salvarInfo{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 90%;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.274);
+    background: white;
+}
+.salvarInfo .itensTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.salvarInfo .itensTop img{
+    width: 70px;
+    height: 70px;
+}
+.salvarInfo .itensTop h4{
+    font-size: 20px;
+}
+.salvarInfo .itensTop p{
+    font-size: 11px;
+}
+.salvarInfo .itensMed p{
+    font-size: 13px;
+}
+.salvarInfo .itensBotton{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.salvarInfo .itensBotton button{
+    width: 100%;
+    height: 59px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 15px;
+    font-family: 'Alef', sans-serif;
+    background-image: linear-gradient(25deg, black, rgb(15, 15, 15),rgb(150, 150, 150));
+    box-shadow: 2px 2px 2px #0000000c;
+}
+.salvarInfo .itensBotton > span{
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+    align-items: center;
+}
+.salvarInfo .itensBotton > span a{
+    font-family: 'Alef', sans-serif;
+}
+
+/*------- Modal Excluir ---------- */
+.modalExcluirFuncionario{
+    position: absolute;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: calc(var(--vh, 1vh)* 100);
+    background: rgba(0, 0, 0, 0.514);
+}
+.excluirFuncionario{
+    max-width: 400px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 30px;
+    background: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.274);
+}
+.excluirFuncionario > .headerModal{
+    padding: 0; 
+}
+.excluirFuncionario > .headerModal h5{ 
+    font-size: 20px;
+}
+.excluirFuncionario .headerModal > p{ 
+    font-size: 12px;
+    font-weight: 400;
+    color: #5c5c5c;
+}
+.excluirFuncionario .text h5 { 
+    font-size: 20px;
+}
+.excluirFuncionario .text p { 
+    font-size: 11px;
+}
+.excluirFuncionario .textIntens > p { 
+    font-size: 12px;
+    color: #414141;
+}
+.excluirFuncionario .itensBotton{ 
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.excluirFuncionario .itensBotton .btnSalvar{ 
+    width: 100%;
+    height: 59px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 15px;
+    font-family: 'Alef', sans-serif;
+    background-image: linear-gradient(25deg, black, rgb(15, 15, 15),rgb(150, 150, 150));
+    box-shadow: 2px 2px 2px #0000000c;
+}
+.excluirFuncionario .itensBotton .btnEditar{ 
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.excluirFuncionario .itensBotton .btnEditar p{ 
+    font-family: 'Alef', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
