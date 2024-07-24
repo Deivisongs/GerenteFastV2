@@ -84,6 +84,7 @@ main{
         width: 100%;
         display: flex;
         justify-content: space-between;
+        aling-itens: center;
         padding: 15px 20px;
         border-radius: 25px;
         background: white;
@@ -92,7 +93,6 @@ main{
     .sectionNotificacoes .cardNotificacao img{
         width: 40px;
         height: 40px;
-        filter: drop-shadow(-3px 7px 5px rgba(0, 0, 0, 0.144));
     }
     .sectionNotificacoes .cardNotificacao .text{
         width: 100%;
@@ -142,7 +142,8 @@ main{
         box-shadow: 2px 2px 2px #0000000c;
     }
     .sectionButtons span a img{
-        filter: drop-shadow(-3px 7px 5px rgba(0, 0, 0, 0.144));
+        width: 40px;
+        heigth: 40px;
     }
     .sectionButtons span a p{
         font-family: 'Alef', sans-serif;
