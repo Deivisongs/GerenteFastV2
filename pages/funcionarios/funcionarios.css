@@ -1,0 +1,189 @@
+.sectionBtn{
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    padding: 0 15px;
+}
+.btnAdd{
+    width: fit-content;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 15px;
+    color: green;
+    border-radius: 20px;
+    border: 2px solid green;
+    background: white;
+    box-shadow: 2px 2px 2px #0000000c;
+    transition: 200ms;
+}
+.btnAdd:hover{
+    background: green;
+    color: white;
+    transform: rotateZ(-2deg);
+}
+.btnAdd:hover img{
+    border-radius: 50%;
+    border: 1px solid white;
+    transform: scale(1.04);
+    background: white;
+}
+.btnAdd p{
+    font-size: 17px;
+    font-family: 'Alef', sans-serif;
+    font-weight: 700;
+}
+.btnAdd img{
+    width: 40px;
+    height: 40px;
+}
+
+.sectionFuncionarios{
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 50px 15px 0 15px;
+    margin-bottom: 20px;
+}
+.sectionFuncionarios header h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+.cardFuncionario{
+    display: flex;
+    padding: 15px 20px;
+    gap: 15px;
+    align-items: center;
+    border-radius: 30px;
+    background: #eeeeee;
+    border: 2px solid #e6e6e6;
+    box-shadow: 2px 2px 2px #0000000c;
+    transition: 500ms;
+}
+.cardFuncionario:hover{
+    background: #e6e6e6;
+    border: 2px solid #001c68;
+}
+.cardFuncionario > img{
+    width: 40px;
+    height: 40px;
+}
+.cardFuncionario .text{
+    width: 100%;
+    padding-left: 20px;
+    border-left: 1px solid black;
+}
+.cardFuncionario .text h5{
+    font-size: 17px;
+    font-weight: 600;
+}
+.cardFuncionario .text p{
+    font-size: 12px;
+    color: #5c5c5c;
+}
+.cardFuncionario .icons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* --------- Modal Info ----------- */
+.modalInfo{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(var(--vh, 1vh)* 100);
+    background: rgba(0, 0, 0, 0.548);
+    z-index: 1000;
+}
+.modalInfo .infoFuncionarios{
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding: 20px 20px 10px 20px;
+    border-radius: 20px;
+    background: #e4e4e4;
+    box-shadow: 2px 2px 2px #0000000c;
+}
+.modalInfo .infoFuncionarios .itensTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modalInfo .infoFuncionarios .itensTop img{
+    width: 70px;
+    height: 70px;
+}
+.modalInfo .infoFuncionarios .itensTop h5{
+    font-size: 20px;
+}
+.modalInfo .infoFuncionarios .itensTop p{
+    font-size: 11px;
+    color: #5c5c5c;
+}
+.modalInfo .infoFuncionarios .itensMed{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #5c5c5c;
+}
+.modalInfo .infoFuncionarios .itensMed hr{
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.438);
+}
+.modalInfo .infoFuncionarios .itensMed p{
+    font-size: 13px;
+}
+.modalInfo .infoFuncionarios .divButton{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.modalInfo .infoFuncionarios .divButton a, .modalInfo .infoFuncionarios .divButton button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 59px;
+    color: black;
+    font-family: 'Alef', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.modalInfo .infoFuncionarios .divButton .btnFechar{
+    color: white;
+    background-image: linear-gradient(25deg, black, rgb(15, 15, 15),rgb(150, 150, 150));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
