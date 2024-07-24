@@ -207,6 +207,8 @@ main{
             box-shadow: 2px 2px 2px #0000000c;
         }
         .ultimosLancamento .cardLancamento img{
+            width: 40px;
+            height: 40px;
         }
         .ultimosLancamento .cardLancamento .text{
             width: 100%;
