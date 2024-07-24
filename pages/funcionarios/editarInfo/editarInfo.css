@@ -1,13 +1,6 @@
-header{
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px 25px;
-    font-size: 30px;
-    font-weight: 600;
-}
 form{
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 600px;
     padding: 0 15px;
     display: flex;
     gap: 12px;
@@ -15,9 +8,11 @@ form{
     align-items: center;
 }
 form input{
-    padding-left: 10px;
+    padding: 0 10px;
     width: 100%;
     height: 41px;
+    border-radius: 10px;
+    background: white;
 }
 form .icon{
     display: flex;
@@ -41,14 +36,13 @@ form > span p{
 }
 form > span input{
     width: 170px;
-    background: white;
 }
 form select{
     width: 100%;
     height: 41px;
-    padding-left: 10px;
+    padding: 0 10px;
     background: white;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 form #experiencia{
     width: 170px;
@@ -152,27 +146,30 @@ form #experiencia{
 .modalExcluirFuncionario{
     position: absolute;
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     height: calc(var(--vh, 1vh)* 100);
-    background: rgba(0, 0, 0, 0.397);
+    background: rgba(0, 0, 0, 0.514);
 }
 .excluirFuncionario{
+    max-width: 400px;
     width: 90%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 30px;
-    background: white;
+    padding: 30px 30px;
+    background: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.274);
 }
-.excluirFuncionario > .header{
+.excluirFuncionario > .headerModal{
     padding: 0; 
 }
-.excluirFuncionario > .header h5{ 
+.excluirFuncionario > .headerModal h5{ 
     font-size: 20px;
 }
-.excluirFuncionario .header > p{ 
+.excluirFuncionario .headerModal > p{ 
     font-size: 12px;
     font-weight: 400;
     color: #5c5c5c;
@@ -185,8 +182,45 @@ form #experiencia{
 }
 .excluirFuncionario .textIntens > p { 
     font-size: 12px;
-    font-weight: 200;
+    color: #414141;
 }
+.excluirFuncionario .itensBotton{ 
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.excluirFuncionario .itensBotton .btnSalvar{ 
+    width: 100%;
+    height: 59px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 15px;
+    font-family: 'Alef', sans-serif;
+    background-image: linear-gradient(25deg, black, rgb(15, 15, 15),rgb(150, 150, 150));
+    box-shadow: 2px 2px 2px #0000000c;
+}
+.excluirFuncionario .itensBotton .btnEditar{ 
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.excluirFuncionario .itensBotton .btnEditar p{ 
+    font-family: 'Alef', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
 
 
 

@@ -18,7 +18,7 @@
     <!-- style css -->
     <link rel="stylesheet" href="editarInfo.css">
 
-    <title>Edirar Informações | GerenteFast</title>
+    <title>Edirar Informações | GerenteFast - Gestão Facilitada...</title>
 </head>
 <body id="body">
 
@@ -39,7 +39,7 @@
                 <button>Salvar</button>
                 <span>
                     <span class="material-symbols-outlined icon">draw</span>
-                    <a href="#" onclick="abrirModal()">Editar Informações</a>
+                    <a href="#" onclick="abrirModalSalvar()">Editar Informações</a>
                 </span>
                 
             </div>
@@ -48,12 +48,12 @@
     </div>
 
     <!-- Modal Excluir Funcionario -->
-    <div class="modalExcluirFuncionario">
+    <div class="modalExcluirFuncionario" id="modalExcluir">
         <div class="excluirFuncionario">
-            <header class="header">
+            <header class="headerModal">
                 <h5>Ops!!! </h5>
                 <h5>Tem Certeza que deseja excluir?</h5>
-                <p>Ao excluir o funcionário todos os registros referentes a ele também será excluído.</p>
+                <p>Ao excluir o funcionário todos os registros referentes a ele também serão excluído.</p>
             </header>
             <hr>
             <div class="text">
@@ -61,18 +61,17 @@
                 <p>Data de Nascimento: 24 de Agosto de 2024</p>
             </div>
             <div class="textIntens">
-                <p><strong>Função: Repositor</strong></p>
-                <p><strong>Data de Admissão: 24 de Agosto de 2024</strong></p>
-                <p><strong>Contrato de Enperiência: 30 Dias</strong></p>
-                <p><strong>Fim do Contrato de Experiência: 23/09/2024</strong></p>
+                <p><strong>Função: </strong>Repositor</p>
+                <p><strong>Data de Admissão: </strong>24 de Agosto de 2024</p>
+                <p><strong>Contrato de Enperiência: </strong>30 Dias</p>
+                <p><strong>Fim do Contrato de Experiência: </strong>23/09/2024</p>
             </div>
             <div class="itensBotton">
-                <button>Salvar</button>
-                <span>
+                <button class="btnSalvar">Salvar</button>
+                <button class="btnEditar" onclick="abrirModalExcluir()">
                     <span class="material-symbols-outlined icon">draw</span>
-                    <a href="#" onclick="abrirModal()">Editar Informações</a>
-                </span>
-                
+                    <p>Editar Informações</p>
+                </button>
             </div>
         </div> 
     </div>
@@ -82,7 +81,9 @@
 
 
 
-    <header>Editando Cadastro</header>
+    <header class="header">
+        <h4>Editando Cadastro</h4>
+    </header>
     <form>
         <span class="material-symbols-outlined icon">account_circle</span>
         <input type="text" name="nome" id="nome" placeholder="Nome">
@@ -114,9 +115,9 @@
         </span>
 
         <div class="divButtons">
-            <button type="button" class="btnSalvar" onclick="abrirModal()">Salvar</button>
+            <button type="button" class="btnSalvar" onclick="abrirModalSalvar()">Salvar</button>
             <a href="../funcionarios.html">Cancelar</a>
-            <button class="btnExcluir">Excluir Funcionário</button>
+            <button type="button" class="btnExcluir" onclick="abrirModalExcluir()">Excluir Funcionário</button>
         </div>
     </form>
 
