@@ -8,12 +8,16 @@ body{
     background: #E4E4E4;
 }
 input{
-    border: none;
     font-size: 16px;
+    background: rgb(236, 236, 236);
+    border: none;
+    border-radius: 10px;
 }
 select{
-    border: none;
     font-size: 16px;
+    background: rgb(236, 236, 236);
+    border: none;
+    border-radius: 10px;
 }
 input:focus, select:focus, textarea:focus{
     outline: 0;
