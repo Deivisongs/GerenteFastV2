@@ -171,17 +171,15 @@ main{
         justify-content: center;
         width: 25px;
         height: 25px;
-        background: rgb(240, 240, 240);
         border-radius: 50%;
-        border: 1px solid rgb(221, 221, 221);
+        border: 1px solid rgb(196, 196, 196);
     }
     .sectionGraficos .cardGrafico .rodape a:hover{
-        background: rgb(235, 235, 235);
-        border-color: #747474;
+        background: rgb(238, 238, 238);
     }
     .sectionGraficos .cardGrafico .rodape span{
         margin-left: 2px;
-        color: #4d4d4d;
+        color: #a5a5a5;
     }
     .sectionGraficos .cardGrafico .rodape p{
         font-size: 9px;
