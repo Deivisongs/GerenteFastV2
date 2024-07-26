@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- StyleGlobal -->
+    <link rel="stylesheet" href="../../styleGlobal.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="verLancados.css">
+
+
+    <title>Meus Lançamentos | GerenteFast - Gestão Facilitada...</title>
+</head>
+<body>
+    <header class="header">
+        <h4>Lançamentos</h4>
+        <a href="../home/home.html">
+            <span class="material-symbols-outlined">close</span>
+        </a>
+    </header>
+    <form class="form">
+        <span class="itensTop">
+            <label for="funcionario" class="spanInput">
+                <span class="material-symbols-outlined">person</span>
+                <select name="funcionario" id="funcionario">
+                    <option value="0" selected disabled>Funcionário...</option>
+                    <option value="1">Jose Santos</option>
+                    <option value="2">Carlos Sousa</option>
+                    <option value="3">Ailton Neves</option>
+                </select>
+                <span class="material-symbols-outlined seta">arrow_drop_down</span>
+            </label>
+            <button type="button">
+                <span class="material-symbols-outlined seta">search</span>
+            </button>
+        </span>
+        <span class="itensButton">
+            <div>
+                <p>de:</p>
+                <input type="date" name="dataDe" id="dataDe">
+            </div>
+            <div>
+                <p>até:</p>
+                <input type="date" name="dataAte" id="dataAte">
+            </div>
+        </span>
+    </form>
+
+    <!-- Section Lançamentos -->
+    <section class="ultimosLancamento">
+        <header class="headerLancamentos">
+            <h3>Últimos Lançamentos</h3>
+        </header>
+
+
+        <!-- Lançamentos -->
+        <div class="lancamento">
+            <div class="cardLancamento" onclick="abrirInfoLancamentos(1)">
+                <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/user-location.png" alt="user-location"/>
+                <span class="text">
+                    <h4>Falta</h4>
+                    <p>Funcionária <strong>Denise de Miranda</strong></p>
+                    <p class="infoDate">03 de Agosto de 2024</p>
+                </span>
+                <span class="material-symbols-outlined btnFechar" >keyboard_arrow_down</span>
+            </div>
+            <div class="maisInfo" id="maisInfo1">
+                <span id="lancamento1">
+                    <h3>Observação:</h3>
+                    <p>Funcionária faltou e não entregou nenhuma justificativa.</p>
+                </span>
+                <button id="btnExcluir1">
+                    <span class="material-symbols-outlined btnFechar">delete_sweep</span>
+                    Excluir Lançamento
+                </button>
+            </div>
+        </div>
+
+        <div class="lancamento">
+            <div class="cardLancamento" onclick="abrirInfoLancamentos(2)">
+                <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/doctors-bag.png" alt="doctors-bag"/>
+                <span class="text">
+                    <h4>Atestado Médico/Horas</h4>
+                    <p>Funcionária <strong>Denise de Miranda</strong></p>
+                    <p class="infoDate">15hrs a 16h45m</p>
+                </span>
+                <span class="material-symbols-outlined btnFechar" >keyboard_arrow_down</span>
+            </div>
+            <div class="maisInfo" id="maisInfo2">
+                <span id="lancamento2">
+                    <h3>Observação:</h3>
+                    <p>Funcionária faltou e não entregou nenhuma justificativa.</p>
+                </span>
+                <button id="btnExcluir2">
+                    <span class="material-symbols-outlined btnFechar">delete_sweep</span>
+                    Excluir Lançamento
+                </button>
+            </div>
+        </div>
+
+        <div class="lancamento">
+            <div class="cardLancamento" onclick="abrirInfoLancamentos(3)">
+                <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/tear-off-calendar.png" alt="tear-off-calendar"/>
+                <span class="text">
+                    <h4>Folga de Domingo</h4>
+                    <p>Funcionária <strong>Juselma Soares</strong></p>
+                    <p class="infoDate">14 de Agosto de 2024</p>
+                </span>
+                <span class="material-symbols-outlined btnFechar" >keyboard_arrow_down</span>
+            </div>
+            <div class="maisInfo" id="maisInfo3">
+                <span id="lancamento3">
+                    <h3>Observação:</h3>
+                    <p>Funcionária faltou e não entregou nenhuma justificativa.</p>
+                </span>
+                <button id="btnExcluir3">
+                    <span class="material-symbols-outlined btnFechar">delete_sweep</span>
+                    Excluir Lançamento
+                </button>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <script src="verLancados.js"></script>
+</body>
+</html>
+
+
+
+
+
+

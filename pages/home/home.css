@@ -207,9 +207,10 @@ main{
             align-items: center;
             padding: 15px 20px;
             border-radius: 25px;
-            background: white;
-            border: 1px solid #c2c2c2;
-            box-shadow: 2px 2px 2px #0000000c;
+            background: #fafafa;
+            border-radius: 20px;
+            box-shadow: 1px 1px 3px rgb(190, 190, 190);
+            border: 1px solid transparent;
         }
         .ultimosLancamento .cardLancamento img{
             width: 40px;

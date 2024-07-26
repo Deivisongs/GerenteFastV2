@@ -1,0 +1,254 @@
+.metricas{
+    /*height: 170px;*/
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.metricas > div{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.metricas > div .pInfo{
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+.metricas > div p strong{
+    color: #b70000;
+    color: #289600;
+}
+.metricas .divGrafico{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.metricas .divGrafico .grafico{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+.metricas .divGrafico .grafico span{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.metricas .divGrafico .grafico span > p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.metricas .divGrafico .grafico span span{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+.metricas .divGrafico .grafico span span img{
+    width: 30px;
+    height: 30px;
+}
+.metricas .divGrafico .grafico span span p{
+    font-size: 50px;
+    font-weight: 500;
+}
+.metricas .divGrafico .grafico div{
+    width: 50px;
+    height: 100px;
+    background: #b70000;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 2px 2px 2px transparent;
+}
+.metricas .divGrafico #grafico2{
+    flex-direction: row-reverse;
+}
+.metricas .divGrafico #grafico2 span{
+    align-items: flex-start;
+}
+.metricas .divGrafico #grafico2 span{
+    align-items: flex-start;
+}
+.metricas .divGrafico #grafico2 #passado{
+    height: 50%;
+    background: rgb(133, 133, 133);
+}
+
+
+
+
+.form{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
+}
+.form .itensTop{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    height: 59px;
+}
+.form .itensTop .spanInput{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 0 0 15px;
+    background: white;
+    border-radius: 20px;
+}
+.form .itensTop .spanInput span{
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: 200;
+    color: #b3b3b3;
+}
+.form .itensTop .spanInput select{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+.form .itensTop button{
+    min-width: 58px;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    color: white;
+    border-radius: 20px;
+}
+.form .itensTop button span{
+    font-size: 35px;
+}
+
+.form .itensButton{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
+.form .itensButton div{
+    width: 100%;
+}
+.form .itensButton div p{
+    font-size: 13px;
+    font-style: italic;
+    color: #5c5c5c;
+    margin-left: 15px;
+}
+.form .itensButton div input{
+    min-width: 90%;
+    width: 100%;
+    height: 58px;
+    background: white;
+    border-radius: 20px;
+    padding: 0 15px;
+}
+
+
+/* --------- section Lançamentos ----------*/
+.ultimosLancamento{
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 20px;
+}
+.ultimosLancamento header{
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ultimosLancamento header h3{
+    font-weight: 600;
+}
+.ultimosLancamento header a{
+    font-size: 14px;
+}
+
+    /* ------- cardLançamento ------- */
+    .lancamento{
+        background: white;
+        border-radius: 25px;
+        box-shadow: 2px 2px 2px #0000000c;
+    }
+    .ultimosLancamento .cardLancamento{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        border-radius: 25px;
+        background: #fafafa;
+        border-radius: 20px;
+        box-shadow: 1px 1px 3px rgb(190, 190, 190);
+        border: 1px solid transparent;
+    }
+    .ultimosLancamento .cardLancamento img{
+        width: 40px;
+        height: 40px;
+    }
+    .ultimosLancamento .cardLancamento .text{
+        width: 100%;
+        padding-left: 15px;
+        margin-left: 10px;
+        border-left: 1px solid black;
+    }
+    .ultimosLancamento .cardLancamento .text h4{
+        font-size: 14px;
+        font-weight: 600;
+        color: #111111;
+    }
+    .ultimosLancamento .cardLancamento .text p{
+        font-size: 12px;
+        color: #5c5c5c;
+    }
+    .ultimosLancamento .cardLancamento .text .infoDate{
+        font-style: italic;
+    }
+    .ultimosLancamento .cardLancamento .btnFechar{
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .ultimosLancamento .lancamento .maisInfo{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #5c5c5c;
+        transition: 500ms;
+        opacity: 0;
+    }
+    .ultimosLancamento .lancamento .maisInfo > span{
+        display: none;
+        padding-left: 15px;
+        border-left: 1px solid #4d4d4d;
+    }
+    .ultimosLancamento .lancamento .maisInfo h3{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .ultimosLancamento .lancamento .maisInfo p{
+        display: inline-block;
+        max-height: 42px;
+        font-size: 12px;
+        font-weight: 300;
+        font-style: italic;
+    }
+    .ultimosLancamento .lancamento .maisInfo button{
+        display: none;
+        gap: 10px;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 600;
+        color: #b70000;
+    }
