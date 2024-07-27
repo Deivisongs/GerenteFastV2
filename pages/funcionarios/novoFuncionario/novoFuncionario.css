@@ -6,7 +6,7 @@ header{
     font-weight: 600;
 }
 form{
-    margin: 0 auto;
+    margin: 25px auto 0 auto;
     max-width: 800px;
     padding: 0 15px;
     display: flex;
@@ -20,10 +20,6 @@ form input{
     height: 45px;
     border-radius: 10px;
     background: white;
-}
-form img{
-    width: 70px;
-    height: 70px;
 }
 form > span{
     width: 100%;
@@ -48,6 +44,7 @@ form select{
     height: 45px;
     padding: 0 10px;
     background: white;
+    border: 1px solid rgb(160, 160, 160);
 }
 form #experiencia{
     width: 170px;
@@ -72,7 +69,8 @@ form #experiencia{
     font-family: 'Alef', sans-serif;
     font-weight: 600;
     color: white;
-    background: rgb(36, 136, 36);
+    background: black;
+    border-radius: 10px;
     box-shadow: 2px 2px 2px #0000000c;
 }
 .divButtons .btnExcluir{
@@ -82,7 +80,7 @@ form #experiencia{
 /* -------- Modal --------- */
 
 .modalSalvarInfo{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: calc(var(--vh, 1vh)* 100);
     display: none;
@@ -133,8 +131,22 @@ form #experiencia{
     font-size: 16px;
     font-weight: 600;
     font-family: 'Alef', sans-serif;
-    background: rgb(36, 136, 36);
+    background: black;
+    border-radius: 10px;
     box-shadow: 2px 2px 2px #0000000c;
+}
+.salvarInfo .itensBotton .btnEditar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 59px;
+    gap: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.salvarInfo .itensBotton .btnEditar p{
+    font-weight: 600;
 }
 .salvarInfo .itensBotton > span{
     display: flex;

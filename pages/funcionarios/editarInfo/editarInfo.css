@@ -1,5 +1,5 @@
 form{
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
     max-width: 800px;
     padding: 0 15px;
     display: flex;
@@ -12,10 +12,7 @@ form input{
     width: 100%;
     height: 41px;
     background: white;
-}
-form .icon{
-    width: 70px;
-    height: 70px;
+    border-radius: 10px;
 }
 form > span{
     width: 100%;
@@ -40,6 +37,7 @@ form select{
     height: 41px;
     padding: 0 10px;
     background: white;
+    border: 1px solid rgb(160, 160, 160);
 }
 form #experiencia{
     width: 170px;
@@ -64,7 +62,8 @@ form #experiencia{
     font-size: 17px;
     font-family: 'Alef', sans-serif;
     font-weight: 600;
-    background: rgb(36, 136, 36);
+    background: black;
+    border-radius: 10px;
     box-shadow: 2px 2px 2px #0000000c;
 }
 .divButtons .btnExcluir{
@@ -74,7 +73,7 @@ form #experiencia{
 /* -------- Modal Salvar --------- */
 
 .modalSalvarInfo{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     display: none;
@@ -117,30 +116,38 @@ form #experiencia{
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Alef', sans-serif;
 }
 .salvarInfo .itensBotton button{
     width: 100%;
     height: 59px;
     color: white;
+    background: black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #0000000c;
     font-size: 16px;
     font-weight: 600;
     font-family: 'Alef', sans-serif;
-    background: rgb(36, 136, 36);
-    box-shadow: 2px 2px 2px #0000000c;
+    
 }
-.salvarInfo .itensBotton > span{
+.salvarInfo .itensBotton a{
+    width: 100%;
+    height: 59px;
     display: flex;
-    gap: 10px;
-    font-weight: 600;
+    justify-content: center;
     align-items: center;
-}
-.salvarInfo .itensBotton > span a{
-    font-family: 'Alef', sans-serif;
+    gap: 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #0000000c;
+    border: 2px solid black;
 }
 
 /*------- Modal Excluir ---------- */
 .modalExcluirFuncionario{
-    position: absolute;
+    position: fixed;
     width: 100%;
     display: none;
     justify-content: center;
@@ -194,13 +201,19 @@ form #experiencia{
     font-size: 16px;
     font-weight: 600;
     font-family: 'Alef', sans-serif;
-    background: rgb(36, 136, 36);
+    background: black;
+    border-radius: 10px;
     box-shadow: 2px 2px 2px #0000000c;
 }
 .excluirFuncionario .itensBotton .btnEditar{ 
+    width: 100%;
+    height: 59px;
     display: flex;
     gap: 10px;
     align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid black;
 }
 .excluirFuncionario .itensBotton .btnEditar p{ 
     font-family: 'Alef', sans-serif;

@@ -30,3 +30,21 @@ function abrirInfoLancamentos(num){
 
     }
 }
+
+
+
+
+/* ------ Abrir e Fechar Modal Excluir -------- */
+function abrirModalExcluir(){
+    const modal = document.getElementById('modalExcluir')
+    const body = document.getElementById('body')
+
+    if(modal.style.display != 'flex'){
+        modal.style.display = 'flex';
+        body.style.overflow = 'hidden';
+    }else{
+        modal.style.display = 'none';
+        body.style.overflow = 'auto';
+    }
+    
+}

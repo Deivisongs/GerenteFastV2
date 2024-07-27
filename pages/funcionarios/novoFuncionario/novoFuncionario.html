@@ -37,10 +37,10 @@
             </div>
             <div class="itensBotton">
                 <button>Salvar</button>
-                <span>
+                <a href="#" class="btnEditar" onclick="abrirModal()">
                     <span class="material-symbols-outlined icon">draw</span>
-                    <a href="#" onclick="abrirModal()">Editar Informações</a>
-                </span>
+                    <p>Editar Informações</p>
+                </a>
                 
             </div>
         </div>
@@ -49,9 +49,13 @@
 
     <header class="header">Novo Funcionário</header>
     <form>
-        <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/businesswoman--v2.png" alt="businesswoman--v2"/>
         <input type="text" name="nome" id="nome" placeholder="Nome">
         <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+        <select name="sexo" id="sexo">
+            <option value="0" disabled selected>Gênero...</option>
+            <option value="1">Masculino</option>
+            <option value="2">Feminino</option>
+        </select>
         <span>
             <p>Data de Nascimento</p>
             <input type="date" name="nascimento" id="nascimento">

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- StyleGlobal -->
+    <link rel="stylesheet" href="../../styleGlobal.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="adicionarLancamento.css">
+
+    <title>Adicionar Lançamento | GerenteFast - Gestão Facilitada...</title>
+</head>
+<body>
+    <header class="header">
+        <h4>Novo Lançamento</h4>
+        <a href="../home/home.html">
+            <span class="material-symbols-outlined">close</span>
+        </a>
+    </header>
+
+    <form>
+        <label for="funcionario" class="input">
+            <span class="material-symbols-outlined">person</span>
+
+            <select name="funcionario" id="funcionario">
+                <option value="0" disabled selected>Selecione o Funcionário...</option>
+                <option value="1">Jose Carlos</option>
+                <option value="2">Ailton Neves</option>
+                <option value="1">Karla Santos</option>
+                <option value="1">Joseane Freitas</option>
+            </select>
+            <span class="material-symbols-outlined seta">arrow_drop_down</span>
+        </label>
+
+        <label for="justificativa" class="input">
+            <span class="material-symbols-outlined">person</span>
+
+            <select name="justificativa" id="justificativa">
+                <option value="0" disabled selected>Selecione o Funcionário...</option>
+                <option value="1">Jose Carlos</option>
+                <option value="2">Ailton Neves</option>
+                <option value="1">Karla Santos</option>
+                <option value="1">Joseane Freitas</option>
+            </select>
+            <span class="material-symbols-outlined seta">arrow_drop_down</span>
+        </label>
+
+        <label for="funcionario" class="date">
+            <p>Data*:</p>
+            <input type="date" name="date" id="date">
+        </label>
+
+        <textarea name="obs" id="obs" placeholder="Observação(Opcional)"></textarea>
+
+        <div class="divButtons">
+            <button type="button" class="btnSalvar">
+                <p>Cadastrar Justificativa</p>
+            </button>
+            <a href="../home/home.html" class="btnCancelar">
+                <p>Cancelar</p>
+            </a>
+        </div>
+    </form>
+</body>
+</html>

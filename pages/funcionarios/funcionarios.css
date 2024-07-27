@@ -11,13 +11,10 @@
     gap: 10px;
     padding: 0 15px;
     color: white;
-    background: rgb(36, 136, 36);
+    background: black;
     box-shadow: 2px 2px 2px #0000000c;
     transition: 300ms;
-}
-.btnAdd:hover{
-    background: #529252;
-    color: white;
+    border-radius: 10px;
 }
 .btnAdd p{
     font-size: 16px;
@@ -96,7 +93,7 @@
     display: flex;
     gap: 30px;
     flex-direction: column;
-    padding: 20px 30px 10px 30px;
+    padding: 20px 30px 20px 30px;
     border-radius: 20px;
     background: #f2f2f2;
     box-shadow: 2px 2px 2px #0000000c;
@@ -144,10 +141,14 @@
     font-family: 'Alef', sans-serif;
     font-weight: 600;
     font-size: 18px;
+    border-radius: 10px;
+    gap: 10px;
+    border: 2px solid black;
 }
 .modalInfo .infoFuncionarios .divButton .btnFechar{
     color: white;
-    background: rgb(36, 136, 36);
+    background: black;
+    border-radius: 10px;
     box-shadow: 2px 2px 2px #0000000c;
 }
 

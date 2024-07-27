@@ -102,6 +102,7 @@
     padding: 0 0 0 15px;
     background: white;
     border-radius: 20px;
+    border: 1px solid rgb(160, 160, 160);
 }
 .form .itensTop .spanInput span{
     margin-right: 10px;
@@ -192,6 +193,9 @@
         box-shadow: 1px 1px 3px rgb(190, 190, 190);
         border: 1px solid transparent;
     }
+    .ultimosLancamento .cardLancamento:hover{
+        cursor: pointer;
+    }
     .ultimosLancamento .cardLancamento img{
         width: 40px;
         height: 40px;
@@ -251,4 +255,64 @@
         font-size: 15px;
         font-weight: 600;
         color: #b70000;
+    }
+
+    /* -------- Modal Excluir --------- */
+    .divModalExcluir{
+        position: fixed;
+        width: 100%;
+        height: calc(var(--vh, 1vh)* 100);;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background: #00000054;
+        z-index: 1000;
+    }
+    .divModalExcluir .modalExcluir{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        max-width: 400px;
+        width: 90%;
+        padding: 30px 20px;
+        border-radius: 20px;
+        background: #f2f2f2;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.397);
+    }
+    .divModalExcluir .modalExcluir header{
+        display: flex;
+        flex-direction: column;
+    }
+    .divModalExcluir .modalExcluir header img{
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 20px auto;
+    }
+    .divModalExcluir .modalExcluir header p{
+        font-size: 12px;
+        font-style: italic;
+        color: #5c5c5c;
+    }
+    .divModalExcluir .modalExcluir hr{
+        margin: 15px 0;
+    }
+    .divModalExcluir .modalExcluir div{
+        font-style: italic;
+        font-size: 12px;
+        color: #5c5c5c;
+        margin-bottom: 25px;
+    }
+    .divModalExcluir .modalExcluir button{
+        height: 59px;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 10px;
+        font-family: 'Alef', sans-serif;
+        border: 2px solid black;
+    }
+    .divModalExcluir .modalExcluir .btnExcluir{
+        background: black;
+        color: white;
+        margin-bottom: 10px;
+        border: none;
     }

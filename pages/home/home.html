@@ -107,6 +107,31 @@
     </div>
 
 
+    <!-- Modal excluir lançamento -->
+    <div class="divModalExcluir" id="modalExcluir">
+        <div class="modalExcluir">
+            <header>
+                <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/delete-sign.png" alt="delete-sign"/>
+                <h3>Tem certeza que deseja deletar??</h3>
+                <p>Ao deletar não é possivel recuperar esse lançamento!</p>
+            </header>
+            <hr>
+            <div>
+                <p><strong>Justificativa: </strong>Falta</p>
+                <p><strong>Funcionário: </strong>Jayane Santos</p>
+                <p><strong>Data: </strong>13/04/2024</p>
+                <p><strong>Observação: </strong>Faltou sem justificativa.</p>
+            </div>
+            
+            <button type="button" class="btnExcluir">
+                <p>Sim, Excluir</p>
+            </button>
+            <button type="button" onclick="abrirModalExcluir()">Cancelar</button>
+
+        </div>
+    </div>
+
+
     <!-- Header Principal -->
     <header class="header">
         <div></div>
@@ -190,7 +215,7 @@
         <!-- Section buttons -->
         <section class="sectionButtons">
             <span>
-                <a href="#" id="btnAdicionar">
+                <a href="../adicionarLancamento/adicionarLancamento.html" id="btnAdicionar">
                     <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/add.png" alt="add"/>
                     <p>Adicionar Novo</p>
                 </a>
@@ -250,7 +275,7 @@
                         <h3>Observação:</h3>
                         <p>Funcionária faltou e não entregou nenhuma justificativa.</p>
                     </span>
-                    <button id="btnExcluir1">
+                    <button id="btnExcluir1" onclick="abrirModalExcluir()">
                         <span class="material-symbols-outlined btnFechar">delete_sweep</span>
                         Excluir Lançamento
                     </button>
