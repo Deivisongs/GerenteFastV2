@@ -22,6 +22,75 @@
 </head>
 <body id="body">
 
+    <!-- Modal Ferias -->
+    <div class="divModalAdiciona" id="divModalFerias">
+        <div class="modalAdiciona">
+            <h3>Adicionando Férias</h3>
+            <hr>
+            <span>
+                <div>
+                    <p>Início:</p>
+                    <input type="date" name="feriasInicio" id="feriasInicio">
+                </div>
+                <div>
+                    <p>Fim:</p>
+                    <input type="date" name="feriasInicio" id="feriasInicio">
+                </div>
+            </span>
+            <div class="feriasButtons">
+                <button class="btnFechar" onclick="abrirModalAdiciona('divModalFerias')">Fechar</button>
+                <a href="#" class="btnAdicionar">Adicionar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Maternidade -->
+    <div class="divModalAdiciona" id="divModalMarnidade">
+        <div class="modalAdiciona">
+            <h3>Licença Maternidade</h3>
+            <hr>
+            <span>
+                <div>
+                    <p>Início:</p>
+                    <input type="date" name="maternidadeInicio" id="maternidadeInicio">
+                </div>
+                <div>
+                    <p>Fim:</p>
+                    <input type="date" name="maternidadeFim" id="maternidadeFim">
+                </div>
+            </span>
+            <div class="feriasButtons">
+                <button class="btnFechar" onclick="abrirModalAdiciona('divModalMarnidade')">Fechar</button>
+                <a href="#" class="btnAdicionar">Adicionar</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Aviso Prévio -->
+    <div class="divModalAdiciona" id="divModalAviso">
+        <div class="modalAdiciona">
+            <h3>Aviso Prévio</h3>
+            <hr>
+            <span>
+                <div>
+                    <p>Início:</p>
+                    <input type="date" name="maternidadeInicio" id="maternidadeInicio">
+                </div>
+                <div>
+                    <p>Fim:</p>
+                    <input type="date" name="maternidadeFim" id="maternidadeFim">
+                </div>
+            </span>
+            <div class="feriasButtons">
+                <button class="btnFechar" onclick="abrirModalAdiciona('divModalAviso')">Fechar</button>
+                <a href="#" class="btnAdicionar">Adicionar</a>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- Modal InfoFuncionarios -->
     <section class="modalInfo" id="modalInfo">
         <div class="infoFuncionarios">
@@ -40,12 +109,46 @@
                 <p><strong>Fim do Contrato: </strong>14/09/2024</p>
 
                 <hr>
-                <p><strong>Funcionário esta de Férias: </strong>--</p>
-                <p><strong>Fim das Férias: </strong>--</p>
-
+                <span class="spanAdd">
+                    <button class="buttonAdd" id="btnAddFerias" onclick="abrirModalAdiciona('divModalFerias','btnAddFerias','itensFerias')">+ Adicionar Férias</button>
+                    <span class="ferias" id="itensFerias">
+                        <span>
+                            <p><strong>Funcionário de férias</strong></p>
+                            <p><strong>Inicio: </strong>17/08/2024 <strong>Fim: </strong>16/09/2024</p>
+                        </span>
+                        <button>
+                            <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/delete-sign.png" alt="delete-sign"/>
+                        </button>
+                    </span>
+                </span>
+                
                 <hr>
-                <p><strong>Licença Maternidade: </strong>--</p>
-                <p><strong>Fim da Licença: </strong>--</p>
+                <span class="spanAdd">
+                    <button class="buttonAdd" id="btnAddMaternidade" onclick="abrirModalAdiciona('divModalMarnidade', 'btnAddMaternidade', 'itensMaternidade')">+ Adicionar L. Maternidade</button>
+                    <span class="ferias" id="itensMaternidade">
+                        <span>
+                            <p><strong>Licença Maternidade</strong></p>
+                            <p><strong>Inicio: </strong>20/01/2024 <strong>Fim: </strong>16/09/2024</p>
+                        </span>
+                        <button>
+                            <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/delete-sign.png" alt="delete-sign"/>
+                        </button>
+                    </span>
+                </span>
+                
+                <hr>
+                <span class="spanAdd">
+                    <button class="buttonAdd" id="btnAddAviso" onclick="abrirModalAdiciona('divModalAviso', 'btnAddAviso', 'itensAviso')">+ Adicionar Aviso Prévio</button>
+                    <span class="ferias" id="itensAviso">
+                        <span>
+                            <p><strong>Funcionário de Aviso</strong></p>
+                            <p><strong>Inicio: </strong>17/08/2024 <strong>Fim: </strong>16/09/2024</p>
+                        </span>
+                        <button>
+                            <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/delete-sign.png" alt="delete-sign"/>
+                        </button>
+                    </span>
+                </span>
 
             </div>
             <div class="divButton">

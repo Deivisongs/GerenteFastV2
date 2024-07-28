@@ -88,6 +88,22 @@ form .divButtons .btnCancelar p{
 }
 
 
+/* -------- Div erro ------- */
+.divErro{
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: rgb(255, 204, 204);
+    border: 1px solid rgb(255, 142, 142);
+    color: rgb(255, 52, 52);
+    font-size: 18px;
+    transition: 500ms;
+}
+.divErro p{
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
 
 
 

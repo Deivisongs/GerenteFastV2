@@ -127,6 +127,37 @@
 .modalInfo .infoFuncionarios .itensMed p{
     font-size: 13px;
 }
+.modalInfo .infoFuncionarios .spanAdd .buttonAdd{
+    display: flex;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    color: rgb(0, 97, 0);
+    background: rgba(0, 128, 0, 0.205);
+    border: 2px solid rgba(0, 165, 0, 0.452);
+    transition: 500ms;
+}
+.modalInfo .infoFuncionarios .spanAdd .buttonAdd:hover{
+    background: rgba(0, 128, 0, 0.349);
+}
+.modalInfo .infoFuncionarios .spanAdd .ferias{
+    padding: 2px 10px;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    color: #001c68;
+    background: #0034c217;
+    border: 1px solid #001c68;
+    border-radius: 5px;
+}
+.modalInfo .infoFuncionarios .spanAdd .ferias button{
+    display: flex;
+}
+.modalInfo .infoFuncionarios .spanAdd .ferias img{
+    width: 25px;
+    height: 25px;
+}
 .modalInfo .infoFuncionarios .divButton{
     display: flex;
     gap: 10px;
@@ -150,6 +181,70 @@
     background: black;
     border-radius: 10px;
     box-shadow: 2px 2px 2px #0000000c;
+}
+
+/* ---------- Modal Ferias ---------- */
+.divModalAdiciona{
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(var(--vh, 1vh)* 100);
+    background: rgba(0, 0, 0, 0.548);
+    z-index: 1500;
+}
+.divModalAdiciona .modalAdiciona{
+    max-width: 380px;
+    width: 85%;
+    border-radius: 20px;
+    padding: 20px;
+    background: #f2f2f2;
+    box-shadow: 2px 2px 2px #0000000c;
+}
+.divModalAdiciona .modalAdiciona h3{
+    font-size: 24px;
+    text-align: center;
+}
+.divModalAdiciona .modalAdiciona hr{
+    border: none;
+    margin: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.199);
+}
+.divModalAdiciona .modalAdiciona span div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.divModalAdiciona .modalAdiciona span div p{
+    font-size: 15px;
+    color: #5c5c5c;
+}
+.divModalAdiciona .modalAdiciona span div input{
+    height: 40px;
+    padding: 0 10px;
+    text-align: center;
+}
+.divModalAdiciona .modalAdiciona .feriasButtons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.divModalAdiciona .modalAdiciona .btnFechar,.divModalAdiciona .modalAdiciona .btnAdicionar{
+    width: 48%;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: 'Alef', sans-serif;
+    font-weight: 600;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.divModalAdiciona .modalAdiciona .btnAdicionar{
+    background: black;
+    color: white;
 }
 
 

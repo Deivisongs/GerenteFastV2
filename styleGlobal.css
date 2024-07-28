@@ -9,15 +9,15 @@ body{
 }
 input, textarea{
     font-size: 16px;
-    background: rgb(236, 236, 236);
+    background: rgb(247, 247, 247);
     border: 1px solid rgb(160, 160, 160);
-    border-radius: 20px;
+    border-radius: 5px;
 }
 select{
     font-size: 16px;
-    background: rgb(236, 236, 236);
+    background: rgb(247, 247, 247);
     border: 1px solid rgb(160, 160, 160);
-    border-radius: 10px;
+    border-radius: 5px;
 }
 input:focus, select:focus, textarea:focus{
     outline: 0;

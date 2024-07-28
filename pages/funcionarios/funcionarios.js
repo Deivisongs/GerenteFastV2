@@ -19,3 +19,28 @@ function abrirModalInfo(){
         body.style.overflow = 'auto'
     }
 }
+
+
+/* ---------- Abrir modal Ferias ---------- */
+function abrirModalAdiciona(x, button, itens){
+    const modal = document.getElementById(x)
+
+    const btnAdd = document.getElementById(button)
+    const itensAdd = document.getElementById(itens)
+
+    console.log(btnAdd)
+    console.log(itensAdd)
+    console.log(x)
+
+    if(modal.style.display != 'flex'){
+        modal.style.display = 'flex'
+        btnAdd.style.display = 'none'
+        itensAdd.style.display = 'flex'
+
+    }else{
+        modal.style.display = 'none'
+        btnAdd.style.display = 'flex'
+        itensAdd.style.display = 'none'
+    }
+}
+
