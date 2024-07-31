@@ -1,0 +1,77 @@
+CREATE DATABASE gerentefast;
+
+USE gerentefast;
+
+CREATE TABLE usuarios(
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(60),
+login VARCHAR(60),
+senha VARCHAR(60),
+nivel VARCHAR(15),
+manaBetania VARCHAR(10),
+manaEldorado VARCHAR(10),
+manaAbilio VARCHAR(10),
+manaBrigadeiro VARCHAR(10),
+megaTudo VARCHAR(10)
+);
+
+
+INSERT INTO usuarios (nome, login, senha, nivel, manaBetania, manaEldorado, manaAbilio, manaBrigadeiro, megaTudo)
+VALUES ('Deivison','adm','adm','adm','S','S','S','S','S');
+
+
+
+CREATE TABLE funcao(
+id INT AUTO_INCREMENT PRIMARY KEY,
+funcao VARCHAR(100)
+);
+
+INSERT INTO funcao(funcao)
+VALUES ('Repositor(a)'), ('Fiscal de Loja'), ('Operador(a) de Caixa'), ('Gerente de Loja'), ('Supervisor');
+
+
+CREATE TABLE justificativas(
+id INT AUTO_INCREMENT PRIMARY KEY,
+justificativa VARCHAR(255)
+);
+
+INSERT INTO justificativas(justificativa)
+VALUES ('Atestado Médico/Dia'), ('Atestado Médico/Horas'), ('Falta'), ('Folga de Domingo'), ('Folga Banco de Horas'), ('Folga Feriado'), ('Feriado Trabalhado'), ('Outros');
+
+
+CREATE TABLE lojas(
+id INT AUTO_INCREMENT PRIMARY KEY,
+loja VARCHAR(255)
+);
+
+INSERT INTO lojas(loja)
+VALUES ('manaBetania'), ('manaEldorado'), ('manaAbilio'), ('manaBrigadeiro'), ('megaTudo'); 
+
+
+CREATE TABLE funcionarios(
+id INT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(255),
+sobrenome VARCHAR(255),
+genero VARCHAR(1),
+nascimento DATE,
+funcao INT,
+admissao DATE,
+loja INT,
+usuario INT
+);
+
+INSERT INTO funcionarios(nome, sobrenome, genero, nascimento, funcao, admissao, loja, usuario)
+VALUES ('Jose', 'Silva', 'M', '1963-08-17', 2, '2024-07-28', 2, 1);
+
+
+CREATE TABLE contrato(
+id INT AUTO_INCREMENT PRIMARY KEY,
+tempo INT
+);
+
+INSERT INTO contrato(tempo)
+VALUES (30), (60), (90);
+
+
+
+
