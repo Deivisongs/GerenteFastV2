@@ -27,18 +27,18 @@
     <div class="modalSalvarInfo" id="modalSalvarInfo">
         <div class="salvarInfo">
             <div class="itensTop">
-                <img width="94" height="94" src="https://img.icons8.com/3d-fluency/94/businesswoman--v2.png" alt="businesswoman--v2"/>
-                <h4>José Carlos Batista Costa</h4>
-                <p>Data de Nascimento 24 de agosto de 2002</p>
+                <img id="iconeTopo" width="94" height="94" src="" alt="businesswoman--v2"/>
+                <h4 id="nomeModal"></h4>
+                <p id="nascimentoModal"></p>
             </div>
             <div class="itensMed">
-                <p><strong>Função: </strong>Repositor</p>
-                <p><strong>Data de Admissão: </strong>24 de Agosto de 2024</p>
-                <p><strong>Contrato de Experiência: </strong>30 Dias</p>
+                <p id="funcaoModal"><strong>Função: </strong></p>
+                <p id="admissaoModal"><strong>Data de Admissão: </strong></p>
+                <p id="experienciaModal"><strong>Contrato de Experiência: </strong></p>
             </div>
             <div class="itensBotton">
                 <button>Salvar</button>
-                <a href="#" onclick="abrirModalSalvar()">
+                <a href="#" class="btnEditar" onclick="abrirModal()">
                     <span class="material-symbols-outlined icon">draw</span>
                     <p>Editar Informações</p>
                 </a>
@@ -58,14 +58,14 @@
             </header>
             <hr>
             <div class="text">
-                <h5>José Carlos Batista Costa</h5>
-                <p>Data de Nascimento: 24 de Agosto de 2024</p>
+                <h5 id="excluirNome"></h5>
+                <p id="excluirNascimento"></p>
             </div>
             <div class="textIntens">
-                <p><strong>Função: </strong>Repositor</p>
-                <p><strong>Data de Admissão: </strong>24 de Agosto de 2024</p>
-                <p><strong>Contrato de Enperiência: </strong>30 Dias</p>
-                <p><strong>Fim do Contrato de Experiência: </strong>23/09/2024</p>
+                <p id="excluirFuncao"><strong>Função: </strong></p>
+                <p id="excluirAdmissao"><strong>Data de Admissão: </strong></p>
+                <p id="excluirExperiencia"><strong>Contrato de Enperiência: </strong></p>
+                <p id="excluirFimContrato"><strong>Fim do Contrato de Experiência: </strong></p>
             </div>
             <div class="itensBotton">
                 <button class="btnSalvar">Sim, Excluir</button>
@@ -86,12 +86,12 @@
         <h4>Editando Cadastro</h4>
     </header>
     <form>
-        <input type="text" name="nome" id="nome" placeholder="Nome">
-        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+        <input type="text" name="nome" id="nome" placeholder="Nome" autocomplete="off" maxlength="14">
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" autocomplete="off" maxlength="14">
         <select name="genero" id="genero">
             <option value="0" disabled selected>Gênero...</option>
-            <option value="1">Feminino</option>
-            <option value="2">Masculino</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
         </select>
         <span>
             <p>Data de Nascimento</p>
@@ -115,12 +115,15 @@
                 <option value="1" selected>30 dias</option>
                 <option value="2" selected>60 dias</option>
                 <option value="3" selected>90 dias</option>
-                <option value="3" selected>Contratação Direta</option>
+                <option value="4" selected>Contratação Direta</option>
             </select>
         </span>
+        <div class="msgErro" id="msgErro">
+            <p id="msgP">Preencha todos os Campos!</p>
+        </div>
 
         <div class="divButtons">
-            <button type="button" class="btnSalvar" onclick="abrirModalSalvar()">Salvar</button>
+            <button type="button" class="btnSalvar" onclick="abrirModal()">Salvar</button>
             <a href="../funcionarios.html">Cancelar</a>
             <button type="button" class="btnExcluir" onclick="abrirModalExcluir()">Excluir Funcionário</button>
         </div>
